@@ -8,13 +8,28 @@ header {
   background: red;
   position: relative;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+header .logo-container {
+  display: inline-block;
+}
+header nav {
+  background: blueviolet;
+  float: right;
+  width: 75%;
   display: flex;
 }
 header nav ul {
-  display: block;
+  width: 100%;
+  background: pink;
+  display: flex;
+  justify-content: space-evenly;
 }
 header nav ul li {
   list-style-type: none;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .actu:nth-child(2n) {
