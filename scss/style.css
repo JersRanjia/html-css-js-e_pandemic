@@ -1,10 +1,34 @@
-html, body {
+* {
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", serif;
 }
 
-body {
-  font-family: "Segoe UI";
+header {
+  background: red;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+header nav ul {
+  display: block;
+}
+header nav ul li {
+  list-style-type: none;
+}
+
+.actu:nth-child(2n) {
+  background: green;
+}
+.actu:nth-child(2n+1) {
+  background: limegreen;
+}
+
+.info:nth-child(2n) {
+  background: deepskyblue;
+}
+.info:nth-child(2n+1) {
+  background: aquamarine;
 }
 
 /*# sourceMappingURL=style.css.map */
