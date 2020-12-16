@@ -32,6 +32,20 @@ header nav ul li {
   font-weight: bold;
 }
 
+main {
+  display: flex;
+}
+main .sidebar .info {
+  padding: 10px;
+}
+main .sidebar .info .description ul {
+  list-style-type: circle;
+  padding: 10px;
+}
+main .sidebar .info .description ul li {
+  margin-left: 15px;
+}
+
 .actu:nth-child(2n) {
   background: green;
 }

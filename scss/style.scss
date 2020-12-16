@@ -42,8 +42,30 @@ header {
 
 }
 
-.actu{
+main {
 
+  display: flex;
+
+  .sidebar {
+
+    .info {
+      padding: 10px;
+
+      .description ul {
+        list-style-type: circle;
+        padding: 10px;
+        li {
+          margin-left: 15px;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+.actu{
   &:nth-child(2n) {
     background: green;
   }
