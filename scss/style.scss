@@ -18,6 +18,11 @@ html, body {
   background: white;
 }
 
+@mixin size_result {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 header {
 
   @include flottant;
@@ -40,7 +45,7 @@ header {
 
   nav {
     //background: blueviolet;
-    
+
 
     ul {
 
@@ -74,7 +79,7 @@ $color_border : #e0e0e0 ;
 
 main {
 
-  margin-top: 30px;
+  margin-top: 60px;
   display: flex;
   height: 100%;
 
@@ -117,6 +122,14 @@ main {
 
     }
 
+    .lbl-result {
+      @include size_result;
+    }
+
+    .nbr-result {
+      @include size_result;
+      color: #c0392b ;
+    }
 
   }
 
@@ -128,7 +141,6 @@ main {
     position: relative;
     &>.sidebar-wrapper {
 
-      position: fixed;
       .info {
 
         padding: 10px;

@@ -43,7 +43,7 @@ header nav ul li a:hover {
 }
 
 main {
-  margin-top: 30px;
+  margin-top: 60px;
   display: flex;
   height: 100%;
 }
@@ -74,12 +74,18 @@ main .last-actus #actus-mada .actu, main .last-actus #actus-outside {
   background: white;
   border-radius: 0px 5px 5px 5px;
 }
+main .last-actus .lbl-result {
+  font-weight: bold;
+  font-size: 20px;
+}
+main .last-actus .nbr-result {
+  font-weight: bold;
+  font-size: 20px;
+  color: #c0392b;
+}
 main .sidebar {
   width: 90%;
   position: relative;
-}
-main .sidebar > .sidebar-wrapper {
-  position: fixed;
 }
 main .sidebar > .sidebar-wrapper .info {
   padding: 10px;

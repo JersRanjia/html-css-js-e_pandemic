@@ -1,0 +1,20 @@
+var test_results = [
+    {
+        "dateTest":"11/04/2020",
+        "newCase":123,
+        "hardCase":50,
+        "deadCase":4
+    },
+    {
+        "dateTest":"18/04/2020",
+        "newCase":109,
+        "hardCase":43,
+        "deadCase":0
+    },
+    {
+        "dateTest":"25/04/2020",
+        "newCase":200,
+        "hardCase":35,
+        "deadCase":6
+    }
+]
