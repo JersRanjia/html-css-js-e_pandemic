@@ -1,9 +1,13 @@
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", serif;
 }
 
+html, body {
+  height: 100%;
+}
 
 header {
   background: red;
@@ -32,9 +36,11 @@ header {
       justify-content: space-evenly;
 
       li {
+
         list-style-type: none;
         text-decoration: underline;
         font-weight: bold;
+
       }
 
     }
@@ -45,11 +51,34 @@ header {
 main {
 
   display: flex;
+  height: 100%;
+
+  &>section {
+
+    padding: 5px;
+
+  }
+
+  .last-actus {
+
+    $space_padd:5%;
+    padding-left: $space_padd ;
+    padding-right: $space_padd ;
+
+    .actu {
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+  }
 
   .sidebar {
 
+    width: 90%;
     .info {
+
       padding: 10px;
+      margin-bottom: 5px;
 
       .description ul {
         list-style-type: circle;

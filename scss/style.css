@@ -4,6 +4,10 @@
   font-family: "Segoe UI", serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 header {
   background: red;
   position: relative;
@@ -34,9 +38,25 @@ header nav ul li {
 
 main {
   display: flex;
+  height: 100%;
+}
+main > section {
+  padding: 5px;
+}
+main .last-actus {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+main .last-actus .actu {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+main .sidebar {
+  width: 90%;
 }
 main .sidebar .info {
   padding: 10px;
+  margin-bottom: 5px;
 }
 main .sidebar .info .description ul {
   list-style-type: circle;
