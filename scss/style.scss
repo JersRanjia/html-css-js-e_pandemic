@@ -3,11 +3,14 @@
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", serif;
+  color: #2c3e50;
+  scroll-behavior: smooth;
+
 }
 
 html, body {
   height: 100%;
-  background: #f1f1f1;
+  background: #F9F8F6;
 }
 
 @mixin flottant {
@@ -37,9 +40,7 @@ header {
 
   nav {
     //background: blueviolet;
-    float: right;
-    width: 75%;
-    display: flex;
+    
 
     ul {
 
@@ -55,7 +56,7 @@ header {
 
         a {
           &:visited, &:link {
-            color: black;
+            color: #c0392b;
             text-decoration: underline;
           }
           &:hover {
@@ -69,7 +70,7 @@ header {
 
 }
 
-$color_border : #0000FF ;
+$color_border : #e0e0e0 ;
 
 main {
 
@@ -82,8 +83,10 @@ main {
     padding: 5px;
 
     .target-menu {
-      color: white;
+      color: #2980b9;
       background:$color_border ;
+      box-shadow: 2px 0px 2px #727272;
+      border-radius: 5px 5px 0px 0px;
       $space_padd:5px;
       padding-left: $space_padd;
       padding-right: $space_padd;
@@ -110,7 +113,7 @@ main {
 
         //border-top: solid 1px $color_border;
         @include flottant;
-        border-radius: 5px;
+        border-radius: 0px 5px 5px 5px;
 
     }
 
@@ -118,6 +121,8 @@ main {
   }
 
   .sidebar {
+
+    $hsize:16px ;
 
     width: 90%;
     position: relative;
@@ -131,6 +136,15 @@ main {
 
         border-radius: 5px;
         @include flottant;
+
+        h1{
+          font-size: $hsize;
+          color: #2980b9;
+        }
+
+        h2 {
+          font-size: $hsize;
+        }
 
         .description ul {
           list-style-type: circle;
