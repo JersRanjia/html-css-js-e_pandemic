@@ -104,20 +104,28 @@ main {
   .sidebar {
 
     width: 90%;
-    .info {
+    position: relative;
+    &>.sidebar-wrapper {
 
-      padding: 10px;
-      margin-bottom: 5px;
+      position: fixed;
+      .info {
 
-      .description ul {
-        list-style-type: circle;
         padding: 10px;
-        li {
-          margin-left: 15px;
-        }
+        margin-bottom: 5px;
 
+        .description ul {
+          list-style-type: circle;
+          padding: 10px;
+          li {
+            margin-left: 15px;
+          }
+
+        }
       }
+
     }
+
+
 
   }
 

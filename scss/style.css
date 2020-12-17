@@ -71,16 +71,20 @@ main .last-actus #actus-outside {
 }
 main .sidebar {
   width: 90%;
+  position: relative;
 }
-main .sidebar .info {
+main .sidebar > .sidebar-wrapper {
+  position: fixed;
+}
+main .sidebar > .sidebar-wrapper .info {
   padding: 10px;
   margin-bottom: 5px;
 }
-main .sidebar .info .description ul {
+main .sidebar > .sidebar-wrapper .info .description ul {
   list-style-type: circle;
   padding: 10px;
 }
-main .sidebar .info .description ul li {
+main .sidebar > .sidebar-wrapper .info .description ul li {
   margin-left: 15px;
 }
 
