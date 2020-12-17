@@ -6,11 +6,13 @@
 
 html, body {
   height: 100%;
-  background: #858f96;
+  background: #f1f1f1;
 }
 
 header {
-  background: red;
+  box-shadow: 2px 2px 5px #727272;
+  background: white;
+  z-index: 10;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -22,21 +24,25 @@ header .logo-container {
   display: inline-block;
 }
 header nav {
-  background: blueviolet;
   float: right;
   width: 75%;
   display: flex;
 }
 header nav ul {
   width: 100%;
-  background: pink;
   display: flex;
   justify-content: space-evenly;
 }
 header nav ul li {
   list-style-type: none;
-  text-decoration: underline;
   font-weight: bold;
+}
+header nav ul li a:visited, header nav ul li a:link {
+  color: black;
+  text-decoration: underline;
+}
+header nav ul li a:hover {
+  text-decoration: none;
 }
 
 main {
@@ -48,6 +54,7 @@ main > section {
   padding: 5px;
 }
 main > section .target-menu {
+  color: white;
   background: #0000FF;
   padding-left: 5px;
   padding-right: 5px;
@@ -63,11 +70,10 @@ main .last-actus .actu {
   padding: 10px;
   margin-bottom: 5px;
 }
-main .last-actus #actus-mada .actu {
-  border: solid 1px #0000FF;
-}
-main .last-actus #actus-outside {
-  border: solid 1px #0000FF;
+main .last-actus #actus-mada .actu, main .last-actus #actus-outside {
+  box-shadow: 2px 2px 5px #727272;
+  background: white;
+  border-radius: 5px;
 }
 main .sidebar {
   width: 90%;
@@ -79,6 +85,9 @@ main .sidebar > .sidebar-wrapper {
 main .sidebar > .sidebar-wrapper .info {
   padding: 10px;
   margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #727272;
+  background: white;
 }
 main .sidebar > .sidebar-wrapper .info .description ul {
   list-style-type: circle;
@@ -86,20 +95,6 @@ main .sidebar > .sidebar-wrapper .info .description ul {
 }
 main .sidebar > .sidebar-wrapper .info .description ul li {
   margin-left: 15px;
-}
-
-.actu:nth-child(2n) {
-  background: green;
-}
-.actu:nth-child(2n+1) {
-  background: limegreen;
-}
-
-.info:nth-child(2n) {
-  background: deepskyblue;
-}
-.info:nth-child(2n+1) {
-  background: aquamarine;
 }
 
 /*# sourceMappingURL=style.css.map */

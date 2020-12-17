@@ -7,12 +7,20 @@
 
 html, body {
   height: 100%;
-  background: #858f96;
+  background: #f1f1f1;
+}
+
+@mixin flottant {
+  box-shadow: 2px 2px 5px #727272;
+  background: white;
 }
 
 header {
 
-  background: red;
+  @include flottant;
+
+  z-index: 10;
+  //background: red;
   width: 100%;
 
   position: fixed;
@@ -28,7 +36,7 @@ header {
   }
 
   nav {
-    background: blueviolet;
+    //background: blueviolet;
     float: right;
     width: 75%;
     display: flex;
@@ -36,16 +44,24 @@ header {
     ul {
 
       width: 100%;
-      background: pink;
+      //background: pink;
       display: flex;
       justify-content: space-evenly;
 
       li {
 
         list-style-type: none;
-        text-decoration: underline;
         font-weight: bold;
 
+        a {
+          &:visited, &:link {
+            color: black;
+            text-decoration: underline;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
 
     }
@@ -66,6 +82,7 @@ main {
     padding: 5px;
 
     .target-menu {
+      color: white;
       background:$color_border ;
       $space_padd:5px;
       padding-left: $space_padd;
@@ -89,15 +106,14 @@ main {
       margin-bottom: 5px;
     }
 
-    #actus-mada {
-      .actu {
-        border: solid 1px $color_border;
-      }
+    #actus-mada .actu, #actus-outside {
+
+        //border-top: solid 1px $color_border;
+        @include flottant;
+        border-radius: 5px;
+
     }
 
-    #actus-outside {
-        border: solid 1px $color_border;
-    }
 
   }
 
@@ -112,6 +128,9 @@ main {
 
         padding: 10px;
         margin-bottom: 5px;
+
+        border-radius: 5px;
+        @include flottant;
 
         .description ul {
           list-style-type: circle;
@@ -131,21 +150,23 @@ main {
 
 }
 
-.actu{
-  &:nth-child(2n) {
-    background: green;
-  }
-  &:nth-child(2n+1) {
-    background: limegreen;
-  }
-}
 
-.info{
 
-  &:nth-child(2n) {
-    background: deepskyblue;
-  }
-  &:nth-child(2n+1) {
-    background: aquamarine;
-  }
-}
+//.actu{
+//  &:nth-child(2n) {
+//    background: green;
+//  }
+//  &:nth-child(2n+1) {
+//    background: limegreen;
+//  }
+//}
+
+//.info{
+//
+//  &:nth-child(2n) {
+//    background: deepskyblue;
+//  }
+//  &:nth-child(2n+1) {
+//    background: aquamarine;
+//  }
+//}
