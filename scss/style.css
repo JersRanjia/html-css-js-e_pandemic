@@ -6,6 +6,7 @@
 
 html, body {
   height: 100%;
+  background: #858f96;
 }
 
 header {
@@ -46,6 +47,9 @@ main > section {
 main .last-actus {
   padding-left: 5%;
   padding-right: 5%;
+}
+main .last-actus img {
+  width: 100%;
 }
 main .last-actus .actu {
   padding: 10px;

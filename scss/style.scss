@@ -7,9 +7,11 @@
 
 html, body {
   height: 100%;
+  background: #858f96;
 }
 
 header {
+
   background: red;
   position: relative;
   width: 100%;
@@ -64,6 +66,10 @@ main {
     $space_padd:5%;
     padding-left: $space_padd ;
     padding-right: $space_padd ;
+
+    img {
+      width: 100%;
+    }
 
     .actu {
       padding: 10px;
