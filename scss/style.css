@@ -11,8 +11,10 @@ html, body {
 
 header {
   background: red;
-  position: relative;
   width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -38,11 +40,17 @@ header nav ul li {
 }
 
 main {
+  margin-top: 30px;
   display: flex;
   height: 100%;
 }
 main > section {
   padding: 5px;
+}
+main > section .target-menu {
+  background: #0000FF;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 main .last-actus {
   padding-left: 5%;
@@ -54,6 +62,12 @@ main .last-actus img {
 main .last-actus .actu {
   padding: 10px;
   margin-bottom: 5px;
+}
+main .last-actus #actus-mada .actu {
+  border: solid 1px #0000FF;
+}
+main .last-actus #actus-outside {
+  border: solid 1px #0000FF;
 }
 main .sidebar {
   width: 90%;

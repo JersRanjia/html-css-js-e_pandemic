@@ -13,8 +13,11 @@ html, body {
 header {
 
   background: red;
-  position: relative;
   width: 100%;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
 
   $space_padd:5px;
   padding-top : $space_padd;
@@ -50,14 +53,24 @@ header {
 
 }
 
+$color_border : #0000FF ;
+
 main {
 
+  margin-top: 30px;
   display: flex;
   height: 100%;
 
   &>section {
 
     padding: 5px;
+
+    .target-menu {
+      background:$color_border ;
+      $space_padd:5px;
+      padding-left: $space_padd;
+      padding-right: $space_padd;
+    }
 
   }
 
@@ -74,6 +87,16 @@ main {
     .actu {
       padding: 10px;
       margin-bottom: 5px;
+    }
+
+    #actus-mada {
+      .actu {
+        border: solid 1px $color_border;
+      }
+    }
+
+    #actus-outside {
+        border: solid 1px $color_border;
     }
 
   }
