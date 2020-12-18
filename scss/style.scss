@@ -176,7 +176,13 @@ main {
 
 }
 
+@media screen and (max-width: 500px){
 
+  main {
+    flex-direction: column;
+  }
+
+}
 
 //.actu{
 //  &:nth-child(2n) {

@@ -109,4 +109,10 @@ main .sidebar > .sidebar-wrapper .info .description ul li {
   margin-left: 15px;
 }
 
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
